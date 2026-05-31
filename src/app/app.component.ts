@@ -6,11 +6,13 @@ import {
   invertiTemaScuro,
 } from './store/app.actions';
 import { CommonModule } from '@angular/common';
+import { HomepageComponent } from './components/homepage/homepage.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, HomepageComponent, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
