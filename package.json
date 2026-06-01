@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "build": "ng build",
-    "tailwind:watch": "npx @tailwindcss/cli -i ./tailwind-input.css -o ./src/styles.scss --watch",
+    "tailwind:watch": "npx @tailwindcss/cli -i ./tailwind-input.css -o ./src/styles.scss --watch --poll",
     "start": "npx concurrently \"npm run tailwind:watch\" \"ng serve --open\"",
     "test": "ng test",
     "serve:ssr:evolution_rope": "node dist/evolution_rope/server/server.mjs"

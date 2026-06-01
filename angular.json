@@ -63,7 +63,8 @@
               "buildTarget": "evolution_rope:build:production"
             },
             "development": {
-              "buildTarget": "evolution_rope:build:development"
+              "buildTarget": "evolution_rope:build:development",
+              "poll": 1000
             }
           },
           "defaultConfiguration": "development"
